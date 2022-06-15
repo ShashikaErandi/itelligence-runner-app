@@ -70,6 +70,6 @@ class RunnerController extends Controller
     }
 
     public function storeResult($id){
-        
+
     }
 }

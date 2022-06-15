@@ -26,5 +26,5 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/runner-enroll', [App\Http\Controllers\RunnerController::class, 'store']);
     Route::get('/run-result', [App\Http\Controllers\RunnerController::class, 'getRunsList']);
     Route::get('/run-result-save/{id}', [App\Http\Controllers\RunnerController::class, 'getRunnersList']);
-
+    Route::get('/run-result-save/{id}', [App\Http\Controllers\RunnerController::class, 'storeResult']);
 });

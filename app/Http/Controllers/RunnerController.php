@@ -63,8 +63,13 @@ class RunnerController extends Controller
         return view('result.index', ['runs' => $runs]);
     }
 
-    public function getRunnersList($id){
+    public function getRunnersList($id)
+    {
         $enrolled_runners = EnrollRunner::where('run_id', $id)->with('runner')->get();
         return view('result.add', ['enrolled_runners' => $enrolled_runners]);
+    }
+
+    public function storeResult($id){
+        
     }
 }
